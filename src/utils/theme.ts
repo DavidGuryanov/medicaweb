@@ -120,7 +120,10 @@ const commonText = {
   fontFamily: 'Urbanist',
 };
 
+type Themes = 'light' | 'dark';
+
 export const lightTheme = {
+  type: 'light' as Themes,
   palette,
   transition: {
     transition: 'all 0.50s linear',
@@ -257,7 +260,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   ...lightTheme,
-
+  type: 'dark' as Themes,
   colorSchemes: {
     white_d3: {
       'background-color': palette.dark.d1,

@@ -9,7 +9,7 @@ import Stepper from '../Stepper';
 import firstImg from './img/first.png';
 import secondImg from './img/second.png';
 import thirdImg from './img/third.png';
-// import UniversalButtons from '../../../../components/UniversalButtons';
+import Button from '../Button';
 
 const slidesData = [
   {
@@ -34,15 +34,10 @@ function Slides() {
       <SlidesControlls>
         <SlideText>{slidesData[slide].text}</SlideText>
         <Stepper steps={3} current={slide} onChange={setSlide} />
-        <button
-          type="button"
-          style={{
-            background: '#246BFD',
-            width: '100%',
-            border: 'none',
-            height: '58px',
-            borderRadius: '50px',
-          }}
+        <Button
+          title="Next"
+          primary
+          rounded
           onClick={() => {
             if (slide < slidesData.length - 1) {
               setSlide(slide + 1);
@@ -50,9 +45,7 @@ function Slides() {
               setSlide(0);
             }
           }}
-        >
-          Next
-        </button>
+        />
       </SlidesControlls>
     </SlidesWrapper>
   );
