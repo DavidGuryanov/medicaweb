@@ -12,6 +12,10 @@ import { ReactComponent as HeartLight } from '../../assets/icons/Heart_light.svg
 import { ReactComponent as HeartDark } from '../../assets/icons/Heart_dark.svg';
 import { ReactComponent as NotificationLight } from '../../assets/icons/Notification_light.svg';
 import { ReactComponent as NotificationDark } from '../../assets/icons/Notification_dark.svg';
+import { ReactComponent as ChipStarBlue } from '../../assets/icons/ChipStarBlue.svg';
+import { ReactComponent as ChipStarWhite } from '../../assets/icons/ChipStarWhite.svg';
+import { ReactComponent as CloseSquareBlue } from '../../assets/icons/CloseSquareBlue.svg';
+import { ReactComponent as CloseSquareWhite } from '../../assets/icons/CloseSquareWhite.svg';
 
 export const iconVariants = {
   basket: Basket,
@@ -24,6 +28,10 @@ export const iconVariants = {
   arrowSecondary: ArrowSecondary,
   heart: { light: HeartLight, dark: HeartDark },
   notification: { light: NotificationLight, dark: NotificationDark },
+  chipStar: ChipStarWhite,
+  cross: CloseSquareWhite,
+  chipStarSec: ChipStarBlue,
+  crossSec: CloseSquareBlue,
 } as const;
 
 interface TIconProps {
